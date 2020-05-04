@@ -11,6 +11,9 @@ public class ExampleResourceTest {
 
     @Test
     public void testHelloEndpoint() {
+        // The actual assertion is in JacksonCustomizer
+        // Here, we're happy if the application starts without exception
+
         given()
           .when().get("/hello")
           .then()
